@@ -16,8 +16,11 @@ export class TasksService {
   ];
 
   getTasks(): Observable<TaskItem[]> {
-    console.log("gettting tasks");
     return of(this.tasks);
+  }
+
+  getTask(id: number): Observable<TaskItem> {
+    return of(this.tasks.find(task=>task.id===id));
   }
 
   addTask(taskName: string): TaskItem[] {
