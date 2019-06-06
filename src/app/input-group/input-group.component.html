@@ -1,4 +1,4 @@
 <div>
-  <input type="text" />
-  <button>Add</button>
+  <input type="text" [(ngModel)]="taskName"/>
+  <button (click)="tasksService.addTask(taskName)">Add</button>
 </div>

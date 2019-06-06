@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TasksService } from '../tasks.service';
 
 @Component({
   selector: 'app-input-group',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InputGroupComponent implements OnInit {
 
-  constructor() { }
+  constructor(public tasksService: TasksService) { }
 
   ngOnInit() {
   }

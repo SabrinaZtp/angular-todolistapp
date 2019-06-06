@@ -9,7 +9,7 @@ import { TasksService } from '../tasks.service';
 })
 export class TasksComponent implements OnInit {
 
-  constructor(private tasksService: TasksService) { }
+  constructor(public tasksService: TasksService) { }
 
   ngOnInit() {
     this.getTasks();
