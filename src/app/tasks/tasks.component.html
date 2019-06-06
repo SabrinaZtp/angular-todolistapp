@@ -1,0 +1,8 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" />
+
+<ul class="task-list">
+  <li *ngFor="let task of tasks">
+    <span [ngClass]="getCheckboxCLass(task.isFinished)" aria-hidden="true"></span>
+    {{task.name}}
+  </li>
+</ul>
